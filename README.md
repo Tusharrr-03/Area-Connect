@@ -58,36 +58,6 @@ lib/
 
 ---
 
-## 🔐 Environment Variables Setup
-
-This project uses environment variables to secure API keys and configuration URLs. 
-
-1. Create a `.env` file in the root directory.
-2. Ensure it is added to your `.gitignore` file.
-3. Populate it with the following structure:
-
-**.env.example**
-```env
-# API Configurations
-API_BASE_URL="http://YOUR_BACKEND_IP:4002/api/"
-NOMINATIM_BASE_URL="https://nominatim.openstreetmap.org/reverse"
-
-# Firebase Configurations (Android)
-FIREBASE_ANDROID_API_KEY="your_android_api_key_here"
-FIREBASE_ANDROID_APP_ID="1:xxxx:android:xxxx"
-
-# Firebase Configurations (iOS)
-FIREBASE_IOS_API_KEY="your_ios_api_key_here"
-FIREBASE_IOS_APP_ID="1:xxxx:ios:xxxx"
-
-# Firebase Configurations (Shared)
-FIREBASE_MESSAGING_SENDER_ID="your_sender_id_here"
-FIREBASE_PROJECT_ID="your_project_id_here"
-FIREBASE_STORAGE_BUCKET="your_storage_bucket_here"
-```
-
----
-
 ## 💻 Installation & Running the Project
 
 ### Prerequisites
@@ -113,23 +83,6 @@ FIREBASE_STORAGE_BUCKET="your_storage_bucket_here"
    ```bash
    flutter run
    ```
-
-### Production Build
-To create a production-ready release build:
-
-**Android:**
-```bash
-flutter build apk --release
-# OR
-flutter build appbundle --release
-```
-
-**iOS:**
-```bash
-flutter build ios --release
-```
-
----
 
 ## 🔮 Future Improvements
 
